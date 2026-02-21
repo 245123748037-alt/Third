@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title> Driving Licence UI</title>
+
+<style>
+body{
+background:#e6e6e6;
+font-family: Arial, Helvetica, sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+/* CARD */
+.dl-card{
+width:380px;
+height:240px;
+background:#cfe3ef;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+padding:10px;
+box-sizing:border-box;
+position:relative;
+}
+
+/* HEADER */
+.dl-header{
+text-align:center;
+font-size:13px;
+font-weight:bold;
+color:#003366;
+line-height:1.2;
+}
+
+/* TOP ROW */
+.top-row{
+display:flex;
+margin-top:8px;
+gap:10px;
+}
+
+/* CHIP */
+.chip{
+width:55px;
+height:40px;
+background:linear-gradient(135deg,#ffd966,#c9a227);
+border-radius:6px;
+}
+
+/* LICENCE NUMBER */
+.licence-no{
+font-weight:bold;
+font-size:13px;
+margin-bottom:4px;
+}
+
+/* INFO */
+.info{
+font-size:11px;
+line-height:1.4;
+flex:1;
+}
+
+/* PHOTO */
+.photo{
+width:80px;
+height:95px;
+background:#f2f2f2;
+border:2px solid #333;
+font-size:10px;
+color:#666;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+/* DETAILS GRID */
+.details{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:4px 10px;
+margin-top:6px;
+font-size:11px;
+}
+
+/* FOOT */
+.footer{
+position:absolute;
+bottom:8px;
+left:10px;
+right:10px;
+font-size:10px;
+display:flex;
+justify-content:space-between;
+color:#003366;
+}
+</style>
+</head>
+
+<body>
+
+<div class="dl-card">
+
+<div class="dl-header">
+INDIAN UNION DRIVING LICENCE<br/>
+Issued by Telangana State
+</div>
+
+<div class="top-row">
+<div class="chip"></div>
+
+<div class="info">
+<div class="licence-no">DL-XX00-0000000000</div>
+Issue Date: 20/07/2024<br/>
+Valid Till: 20/07/2034
+</div>
+
+<div class="photo">
+<img src="download.jpeg" class="photo" />
+</div>
+</div>
+
+<div class="details">
+<div><strong>Name:</strong> Vamshi</div>
+<div><strong>Blood Group:</strong> O+</div>
+
+<div><strong>Father / Guardian:</strong> Krishna</div>
+<div><strong>Vehicle Class:</strong> LMV</div>
+
+<div><strong>DOB:</strong> 12/05/1996</div>
+<div><strong>Authority:</strong> SAMPLE RTO</div>
+</div>
+
+<div class="footer">
+<div>Holder Signature</div>
+<div>Licensing Authority</div>
+</div>
+
+</div>
+
+</body>
+</html>
